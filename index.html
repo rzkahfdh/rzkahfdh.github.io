@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="r.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <title>Portofolio Rais</title>
+</head>
+<body>
+    <header>
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a> 
+            <a href="#contact">contact</a>  
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div id="particles-js"></div>
+        <div class="content">
+            <img class="tilt" src="gf.jpg" alt="">
+            <h3><span>raizka hafidh fadhilla</span></h3>
+            <p>Saya  <span class="typing-text"></span></p>
+            <a href="#about" class="btn">Tentang Rais</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading">>>Tentang <span>Rais</span><<<</h1>
+        <div class="row">
+            <div class="image">
+            <img class="tilt" src="gW.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>Portofolio</h3>
+            <p class="info">Nama Gua Raizka Hafidh Fadhilla, Nama Panggilan Rais, Gua lahir disubang 14 mei 2004, Gua anak pertama dari 2 bersaudara,
+                Gua sekarang tinggal di pamulang, Tangerang Selatan dan gua sedang menempuh Kuliah di Universitas Pamulang Jurusan Teknik Informatika.</p>
+                <div class="box-container">
+                    <div class="box">
+                        <p><span>Usia :</span>18</p>
+                        <p><span>Kelamin :</span>Pria</p>
+                        <p><span>Status :</span>Mahasiswa</p>
+                        <p><span>Kampus :</span>Universitas Pamulang</p>
+                    </div>
+                    <div class="box">
+                        <p><span>Phone :</span>089630466217</p>
+                        <p><span>Email :</span>raizkahafidh14@gmail.com</p>
+                        <p><span>Instagram :</span>@rzkahfdhfdhlla</p>
+                <a href="#" class="btn">Download CV</a>
+            </div>
+        </div>
+    </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h1 class="heading"><span>my </span>service</h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Tahap Belajar</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Graphic Design</h3>
+                <p>Tahap Belajar</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-mobile"></i>
+                <h3>Mobile Phone</h3>
+                <p>Tahap Belajar</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Comunication</h3>
+                <p>On Progres</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>Web </h3>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="heading">contact <span>me</span></h1>
+        <div class="row">
+            <div class="image">
+                <!-- <img class="tilt" src="raisfoto.jpg" alt=""> -->
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="Nama" name="" id="">
+                    <input type="email" placeholder="Email" name="" id="">
+                    <input type="text" placeholder="Subjek" class="box" name="" id="">
+                <textarea name="message" placeholder="Isi email" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="Kirim Pesan">
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="footer">Web design by <span>Raizka Hafidh Fadhilla</span> || all right reserved!</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script src="particles.min.js"></script>
+<script src="app.js"></script>
+<script>
+    let menu = document.querySelector('#menu-bars');
+    let header = document.querySelector('header');
+    menu.onclick = () =>{
+        menu.classList.toggle('fa-times');
+        header.classList.toggle('active');
+    };
+
+    window.onscroll = () =>{
+        menu.classList.remove('fa-times');
+        header.classList.remove('active');
+    };
+    var typed = new Typed('.typing-text',{
+        strings : ['Mahasiswa Unpam ','ingin menjadi frontend', 'Rais naks pamulang'],
+        loop : true,
+        typeSpeed : 50
+    });
+    VanillTilt.init(document.querySelectorAll('.tilt',{
+        max : 25,
+
+    }));
+</script>
+
+</body>
+</html>
